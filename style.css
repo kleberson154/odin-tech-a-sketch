@@ -10,9 +10,8 @@ body {
 #sketch-area {
   display: flex;
   flex-wrap: wrap;
-  margin: 100px auto;
+  margin: 100px auto 0 auto;
   background-color: white;
-  box-shadow: 10px 10px rgba(0, 170, 255, 0.034);
 }
 
 .cell {
@@ -33,4 +32,29 @@ body {
   opacity: 0.7;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
+}
+
+#slider-value {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
 }
